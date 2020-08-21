@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toStartOf="@+id/text_view_NoContrato"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="ID"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_view_NoContrato"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="60dp"
+            android:layout_toStartOf="@id/text_view_Consumo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="No. Contrato"
+            android:textAlignment="viewStart"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_view_Consumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_ID"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="110dp"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Consumo (m3)"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/text_view_direccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="320dp"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_colonia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="307dp"
+            android:layout_toEndOf="@+id/text_view_direccion"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_municipio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="248dp"
+            android:layout_toEndOf="@+id/text_view_colonia"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_fecha_corte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="85dp"
+            android:layout_toEndOf="@+id/text_view_municipio"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_fecha_instalacion"
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="22dp"
+            android:layout_toEndOf="@+id/text_view_fecha_corte"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="74dp"
+            android:layout_toEndOf="@+id/text_view_municipio"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/buttonEdit"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+            android:text="Edit"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Enero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="64dp"
+            android:layout_toStartOf="@+id/text_view_Consumo"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Febrero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="204dp"
+            android:layout_toStartOf="@+id/buttonEdit"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Marzo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text_view_Consumo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="126dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="93dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Abril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="192dp"
+            android:layout_toStartOf="@+id/buttonEdit"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Mayo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text_view_fecha_corte"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="122dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="136dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Junio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="162dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="97dp"
+            android:layout_toStartOf="@+id/buttonEdit"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Julio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text_view_fecha_corte"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="119dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Agosto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="170dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="97dp"
+            android:layout_toStartOf="@+id/buttonEdit"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Septiembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="96dp"
+            android:layout_toStartOf="@+id/buttonEdit"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Octubre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text_view_fecha_corte"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="167dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="91dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Noviembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/text_view_fecha_corte"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="118dp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/text_view_Mes_Dicembre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="142dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="187dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
