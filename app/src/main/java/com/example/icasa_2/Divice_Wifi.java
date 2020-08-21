@@ -179,6 +179,9 @@ public class Divice_Wifi extends AppCompatActivity {
     }
 
 
+    // Prueba de rama
+
+
     // Define class to listen to broadcasts
     class WifiBroadcastReceiver extends BroadcastReceiver  {
         @Override
