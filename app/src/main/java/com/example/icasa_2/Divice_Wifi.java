@@ -55,7 +55,6 @@ public class Divice_Wifi extends AppCompatActivity {
     TextView editTextPassword;
     private WifiBroadcastReceiver wifiReceiver;
     private static final int MY_REQUEST_CODE = 123;
-   // String networkCapabilities, networkSSID;
      ScanResult result1;
 
     public static ProgressBar progressBar;
@@ -84,14 +83,7 @@ public class Divice_Wifi extends AppCompatActivity {
        // this.textViewScanResults = (TextView) this.findViewById(R.id.textView_scanResults);
         this.linearLayoutScanResults = (LinearLayout) this.findViewById(R.id.listId);
 
-        /*
-        this.buttonState.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                showWifiState();
-            }
-        });    */
 
         final AlertDialog.Builder RegisterDialog = new AlertDialog.Builder(this);
         RegisterDialog.setTitle("Pareo Con wifi");
@@ -203,7 +195,6 @@ public class Divice_Wifi extends AppCompatActivity {
                 List<ScanResult> list = wifiManager.getScanResults();
 
                 Divice_Wifi.this.showNetworks(list);
-               // MainActivity.this.showNetworksDetails(list);
             }  else {
                 Log.d(LOG_TAG, "Scan not OK");
             }
