@@ -3,6 +3,7 @@ package com.example.icasa_2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -29,6 +30,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firestore.v1.StructuredQuery;
+
+import Viewmodel.ViewModel;
 
 //Codigo principal para el registro y login de la app
 
@@ -70,12 +73,14 @@ public class MainActivity extends AppCompatActivity {
 
    private FirebaseFirestore db = FirebaseFirestore.getInstance();
    private CollectionReference notebookRef ;
+   private ViewModel viewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        viewModel = ViewModelProviders.of(this).get(ViewModel.class);
         //asignacion de variables a objetos en el layout
 
         mEmail = findViewById(R.id.Email);
@@ -92,10 +97,7 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
 
 
-        // if (fAuth.getCurrentUser() != null){
-        //   startActivity(new Intent(getApplicationContext(),ScanCodeActivity.class));
 
-        //}
         mFirestore = FirebaseFirestore.getInstance();
 
 //Boton y funcion para el registro de nuevos usuarios
@@ -113,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
 
                 LayoutInflater inflater=getLayoutInflater();
                 View login_layout=inflater.inflate(R.layout.activity_registro,null);
-
 
 
                 final EditText eeMail = login_layout.findViewById(R.id.Email);
@@ -164,12 +165,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
 
-                      //  Toast.makeText(MainActivity.this, "Usuario creado", Toast.LENGTH_SHORT).show();
 
                     }
                 });
 
-               // RegisterDialog.create().show();
+
 
             }
 
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
 
                           //  User1 = password;
                             String id = fAuth.getCurrentUser().getUid();
-                               Intent intent = new Intent(getApplicationContext(), Divice_Wifi.class);
+                               Intent intent = new Intent(getApplicationContext(), AddDevice1.class);
                                 intent.putExtra("user", id);
                                startActivity(intent);
 

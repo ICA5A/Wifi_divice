@@ -47,6 +47,12 @@ dependencies {
     implementation 'com.google.firebase:firebase-database:16.0.1';
     implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
     implementation 'com.firebaseui:firebase-ui-firestore:6.2.1'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+
+    //viewmodel
+    def lifecycle_version = "1.1.1"
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
 
 
 //library barcod escanner
